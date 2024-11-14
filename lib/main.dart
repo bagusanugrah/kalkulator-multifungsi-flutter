@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/scientific_calculator.dart';
-import 'screens/conversion_screen.dart';
+import 'screens/currency_conversion_screen.dart';
 import 'screens/temperature_conversion_screen.dart';
 import 'screens/bmi_calculator_screen.dart';
 import 'screens/discount_calculator_screen.dart';
@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
             _buildFeatureCard(context, 'Scientific Calculator', Icons.calculate,
                 ScientificCalculator()),
             _buildFeatureCard(context, 'Konversi Mata Uang', Icons.attach_money,
-                ConversionScreen()),
+                CurrencyConversionScreen()),
             _buildFeatureCard(context, 'Konversi Suhu', Icons.thermostat,
                 TemperatureConversionScreen()),
             _buildFeatureCard(context, 'BMI Calculator', Icons.accessibility,
