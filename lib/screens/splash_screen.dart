@@ -38,20 +38,39 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // Menambahkan judul aplikasi di atas foto
             Text(
-              'Nama: Bagus Anugrah',
+              'Kalkulator Multifungsi',
               style: TextStyle(
-                fontSize: 24,
+                fontSize: 28,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 20),
+            // Menambahkan foto dengan lebar 3/5 dari lebar layar
+            Container(
+              width: MediaQuery.of(context).size.width * 0.6,
+              child: Image.asset(
+                'assets/images/my-photo.jpg', // Jalur file foto
+                fit: BoxFit.cover,
+              ),
+            ),
+            SizedBox(height: 20),
+            Text(
+              'Nama: Bagus Anugrah',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             Text(
               'NRP: 15-2022-029',
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 20,
                 color: Colors.white,
+                fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(height: 30),
