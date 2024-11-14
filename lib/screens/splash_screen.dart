@@ -51,9 +51,13 @@ class _SplashScreenState extends State<SplashScreen> {
             // Menambahkan foto dengan lebar 3/5 dari lebar layar
             Container(
               width: MediaQuery.of(context).size.width * 0.6,
-              child: Image.asset(
-                'assets/images/my-photo.jpg', // Jalur file foto
-                fit: BoxFit.cover,
+              height: MediaQuery.of(context).size.width * 0.6,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: AssetImage('assets/images/my-photo.jpg'),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             SizedBox(height: 20),
