@@ -7,6 +7,7 @@ import 'screens/discount_calculator_screen.dart';
 import 'screens/area_volume_screen.dart';
 import 'screens/expense_tracker_screen.dart';
 import 'screens/splash_screen.dart';
+import 'screens/profile_screen.dart'; // Import ProfileScreen
 
 void main() => runApp(MyApp());
 
@@ -29,6 +30,21 @@ class HomeScreen extends StatelessWidget {
             style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.blueAccent,
         elevation: 0,
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.person,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              // Navigasi ke halaman profil
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ProfileScreen()),
+              );
+            },
+          ),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
