@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ConversionScreen extends StatefulWidget {
+class CurrencyConversionScreen extends StatefulWidget {
   @override
-  _ConversionScreenState createState() => _ConversionScreenState();
+  _CurrencyConversionScreenState createState() =>
+      _CurrencyConversionScreenState();
 }
 
-class _ConversionScreenState extends State<ConversionScreen> {
+class _CurrencyConversionScreenState extends State<CurrencyConversionScreen> {
   final TextEditingController _amountController = TextEditingController();
   String _fromCurrency = 'USD';
   String _toCurrency = 'IDR';
